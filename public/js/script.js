@@ -132,7 +132,7 @@ if (window.location.pathname.includes('update.html')) {
     const id = new URLSearchParams(window.location.search).get('id');
     fetch(`${apiUrl}/${id}`)
         .then(response => response.json())
-        .then(livro => {
+        .then(livro => { 
             document.getElementById('livroId').value = livro._id;
             document.getElementById('titulo').value = livro.titulo;
             document.getElementById('autor').value = livro.autor;
