@@ -1,0 +1,105 @@
+/* EditarLivro.css */
+
+/* Estilo global para o corpo */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9; /* Cor de fundo mais suave */
+}
+
+/* Estilo do formulário */
+form {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Sombra mais intensa */
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px; /* Padding maior para mais espaço interno */
+    box-sizing: border-box;
+}
+
+/* Título do formulário */
+h1 {
+    font-family: 'Georgia', serif;
+    color: #333;
+    margin-bottom: 25px; /* Margem um pouco maior para espaçamento */
+    font-size: 26px; /* Fonte um pouco maior para destaque */
+    text-align: center;
+}
+
+/* Estilo do grupo de formulário */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Estilo dos rótulos dos campos do formulário */
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #444; /* Cor um pouco mais escura para contraste */
+}
+
+/* Estilo dos campos de entrada */
+.form-group input {
+    width: 100%;
+    padding: 12px; /* Padding maior para mais conforto */
+    border: 1px solid #ddd;
+    border-radius: 5px; /* Borda um pouco mais arredondada */
+    font-size: 16px;
+    box-sizing: border-box;
+    background-color: #fafafa;
+}
+
+/* Estilo dos campos de entrada quando em foco */
+.form-group input:focus {
+    border-color: #007bff;
+    outline: none;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2); /* Adiciona sombra leve no foco */
+}
+
+/* Estilo do botão */
+button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px; /* Padding ajustado para maior conforto */
+    font-size: 16px;
+    border-radius: 5px; /* Borda do botão arredondada */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Transição suave para cor e efeito de escala */
+    margin-top: 15px; /* Margem maior para separar do último campo */
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Estilo do botão ao passar o mouse */
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.02); /* Leve aumento no tamanho ao passar o mouse */
+}
+
+/* Estilo do botão desativado */
+button:disabled {
+    background-color: #d6d6d6;
+    cursor: not-allowed;
+}
+
+/* Estilo responsivo para telas menores */
+@media (max-width: 600px) {
+    form {
+        margin: 15px;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    button {
+        padding: 10px 18px;
+    }
+}

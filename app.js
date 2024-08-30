@@ -1,7 +1,7 @@
-//arquico principal
+//arquivo principal
+
 const express = require('express');
 const bodyParser = require('body-parser');
-const cors = require('cors');
 const livroRoutes = require('./routes/livroRoutes');
 require('dotenv').config();
 require('./config/database'); // Conectando ao banco de dados
@@ -9,11 +9,12 @@ require('./config/database'); // Conectando ao banco de dados
 
 const app = express();
 
+const cors = require('cors');
 
 // Middlewares
-app.use(bodyParser.json());
 app.use(express.json());
 app.use(cors());
+
 
 // Rotas
 app.use('/livros', livroRoutes);

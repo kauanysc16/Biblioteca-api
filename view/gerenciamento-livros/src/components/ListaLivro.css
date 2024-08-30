@@ -1,0 +1,114 @@
+/* ListaLivros.css */
+
+/* Estilo global para o corpo */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Cor de fundo mais suave */
+}
+
+/* Estilo do título principal */
+h1 {
+    font-family: 'Georgia', serif;
+    color: #333;
+    margin: 30px 0; /* Margem ajustada para espaçamento maior */
+    text-align: center;
+    font-size: 32px; /* Tamanho da fonte aumentado para mais destaque */
+}
+
+/* Estilo dos links */
+a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    transition: color 0.3s; /* Transição suave para a cor */
+}
+
+a:hover {
+    color: #0056b3; /* Cor de destaque ao passar o mouse */
+    text-decoration: underline;
+}
+
+/* Container principal */
+.container {
+    max-width: 900px; /* Largura máxima aumentada para melhor uso do espaço */
+    margin: 0 auto;
+    padding: 30px; /* Padding ajustado para mais espaço interno */
+    background-color: #ffffff;
+    border-radius: 10px; /* Bordas arredondadas mais pronunciadas */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Sombra mais intensa */
+}
+
+/* Cabeçalho da lista */
+.list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px; /* Margem maior para melhor espaçamento */
+}
+
+/* Estilo do botão de adicionar novo livro */
+.add-button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px; /* Padding ajustado para maior conforto */
+    font-size: 16px;
+    border-radius: 5px; /* Borda do botão arredondada */
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s; /* Transição suave para a cor e efeito de escala */
+}
+
+.add-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.02); /* Efeito de escala ao passar o mouse */
+}
+
+/* Estilo da lista */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilo dos itens da lista */
+li {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px; /* Bordas arredondadas para os itens da lista */
+    padding: 20px; /* Padding ajustado para mais conforto */
+    margin-bottom: 15px; /* Margem ajustada para espaçamento entre itens */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+}
+
+li:hover {
+    background-color: #f9f9f9; /* Cor de fundo suave ao passar o mouse */
+}
+
+/* Estilo do botão de deletar */
+li button {
+    background-color: #dc3545;
+    color: #ffffff;
+    border: none;
+    padding: 8px 14px; /* Padding ajustado para maior conforto */
+    font-size: 14px;
+    border-radius: 5px; /* Borda arredondada para o botão */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Transição suave para a cor e efeito de escala */
+}
+
+li button:hover {
+    background-color: #c82333;
+    transform: scale(1.02); /* Efeito de escala ao passar o mouse */
+}
+
+li button:disabled {
+    background-color: #d6d6d6;
+    cursor: not-allowed;
+}

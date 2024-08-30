@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const livroSchema = new Schema({
+const LivroSchema = new mongoose.Schema({
     titulo: {
         type: String,
         required: true
@@ -18,3 +18,5 @@ const livroSchema = new Schema({
         required: false
     }
 });
+
+module.exports = mongoose.model('Livro', LivroSchema);
